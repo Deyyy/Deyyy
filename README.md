@@ -1,2 +1,0 @@
-# Deyyy
-SF-Klassen-Optimizer
