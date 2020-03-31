@@ -1,0 +1,180 @@
+<html>
+ <body>
+     
+<div class="wrapper">
+<form id='nameFormA1'>
+<div class='form-uname'>
+    <label id='nameLableA1' for='nameFieldA1'>Kennzeichen: </label>
+    <input id='nameFieldA1' type='text' maxlength='12'></input>
+</div>
+</form>
+
+<form id='nameForAm2'>
+<div class='form-uname'>
+    <label id='nameLableA2' for='nameFieldA2'>Beitrag Haftpflicht: </label>
+    <input id='nameFieldA2' type='number' min="0" placeholder="mit SF0, in Euro"></input>
+</div>
+</form>
+
+<form id='nameFormA3'>
+<div class='form-uname'>
+    <label id='nameLableA3' for='nameFieldA3'>Beitrag Teilkasko: </label>
+    <input id='nameFieldA3' type='number' min="0" placeholder="mit SF0, in Euro"></input>
+</div>
+</form>
+
+<form id='nameFormA4'>
+<div class='form-uname'>
+    <label id='nameLableA4' for='nameFieldA4'>Beitrag Vollkasko: </label>
+    <input id='nameFieldA4' type='number' min="0" placeholder="mit SF0, in Euro"></input>
+</div>
+</form>
+
+<form id='nameFormA5'>
+<div class='form-group'>
+    <label id='nameLableA5' for='nameFieldA5'>SF-Klasse Haftpflicht: </label>
+    <select class="form-control input-medium" name="SF-Klasse[]" id='nameFieldA5'>
+     <option value="">Bitte auswählen</option>
+                        <option value="0">SF 0</option>
+                        <option value="1">SF 1</option>
+                        <option value="2">SF 2</option>
+                        <option value="3">SF 3</option>
+                        <option value="4">SF 4</option>
+                        <option value="5">SF 5</option>
+                        <option value="6">SF 6</option>
+                        <option value="7">SF 7</option>
+                        <option value="8">SF 8</option>
+                        <option value="9">SF 9</option>
+                        <option value="10">SF 10</option>
+                        <option value="11">SF 11</option>
+                        <option value="12">SF 12</option>
+                        <option value="13">SF 13</option>
+                        <option value="14">SF 14</option>
+                        <option value="15">SF 15</option>
+                        <option value="16">SF 16</option>
+                        <option value="17">SF 17</option>
+                        <option value="18">SF 18</option>
+                        <option value="19">SF 19</option>
+                        <option value="20">SF 20</option>
+                        <option value="21">SF 21</option>
+                        <option value="22">SF 22</option>
+                        <option value="23">SF 23</option>
+                        <option value="24">SF 24</option>
+                        <option value="25">SF 25</option>
+                        <option value="26">SF 26</option>
+                        <option value="27">SF 27</option>
+                        <option value="28">SF 28</option>
+                        <option value="29">SF 29</option>
+                        <option value="30">SF 30</option>
+                        <option value="31">SF 31</option>
+                        <option value="32">SF 32</option>
+                        <option value="33">SF 33</option>
+                        <option value="34">SF 34</option>
+                        <option value="35">SF 35</option>
+                    </select>
+</div>
+</form>
+
+<form id='nameFormA6'>
+<div class='form-group'>
+    <label id='nameLableA6' for='nameFieldA6'>SF-Klasse Vollkasko: </label>
+    <select class="form-control input-medium" name="SF-Klasse[]" id='nameFieldA6'>
+     <option value="">Bitte auswählen</option>
+                        <option value="0">SF 0</option>
+                        <option value="1">SF 1</option>
+                        <option value="2">SF 2</option>
+                        <option value="3">SF 3</option>
+                        <option value="4">SF 4</option>
+                        <option value="5">SF 5</option>
+                        <option value="6">SF 6</option>
+                        <option value="7">SF 7</option>
+                        <option value="8">SF 8</option>
+                        <option value="9">SF 9</option>
+                        <option value="10">SF 10</option>
+                        <option value="11">SF 11</option>
+                        <option value="12">SF 12</option>
+                        <option value="13">SF 13</option>
+                        <option value="14">SF 14</option>
+                        <option value="15">SF 15</option>
+                        <option value="16">SF 16</option>
+                        <option value="17">SF 17</option>
+                        <option value="18">SF 18</option>
+                        <option value="19">SF 19</option>
+                        <option value="20">SF 20</option>
+                        <option value="21">SF 21</option>
+                        <option value="22">SF 22</option>
+                        <option value="23">SF 23</option>
+                        <option value="24">SF 24</option>
+                        <option value="25">SF 25</option>
+                        <option value="26">SF 26</option>
+                        <option value="27">SF 27</option>
+                        <option value="28">SF 28</option>
+                        <option value="29">SF 29</option>
+                        <option value="30">SF 30</option>
+                        <option value="31">SF 31</option>
+                        <option value="32">SF 32</option>
+                        <option value="33">SF 33</option>
+                        <option value="34">SF 34</option>
+                        <option value="35">SF 35</option>
+                    </select>
+</div>
+</form>
+
+<div class='form-sub'>
+    <button id='subButtonA' type='button'>Fertig</button>
+</div>
+<div>
+    <p id='resultA1'></p>
+    <p id='resultA2'></p>
+    <p id='resultA3'></p>
+    <p id='resultA4'></p>
+    <p id='resultA5'></p>
+    <p id='resultA6'></p>
+</div>
+
+    <script>
+function getUserName(A) {
+var nameFieldA1 = document.getElementById('nameFieldA1').value;
+var resultA1 = document.getElementById('resultA1');
+
+var nameFieldA2 = document.getElementById('nameFieldA2').value;
+var resultA2 = document.getElementById('resultA2');
+
+var nameFieldA3 = document.getElementById('nameFieldA3').value;
+var resultA3 = document.getElementById('resultA3');
+
+var nameFieldA4 = document.getElementById('nameFieldA4').value;
+var resultA4 = document.getElementById('resultA4');
+
+var nameFieldA5 = document.getElementById('nameFieldA5').value;
+var resultA5 = document.getElementById('resultA5');
+
+var nameFieldA6 = document.getElementById('nameFieldA6').value;
+var resultA6 = document.getElementById('resultA6');
+
+if (nameFieldA1.length < 3) {
+    resultA1.textContent = 'Falsches Kennzeichen';
+    //alert('Falsches Kennzeichen');
+} else {
+    resultA1.textContent = '1. Kennzeichen: ' + nameFieldA1;
+    //alert(nameFieldA1);
+    resultA2.textContent = '1. Beitrag Haftpflicht: ' + nameFieldA2 + "€";
+    //alert(nameFieldA2);
+    resultA3.textContent = '1. Beitrag Teilkasko: ' + nameFieldA3 + "€";
+    //alert(nameFieldA3);
+    resultA4.textContent = '1. Beitrag Vollkasko: ' + nameFieldA4 + "€";
+    //alert(nameFieldA4);
+    resultA5.textContent = '1. SF-Klasse Haftpflicht: ' + "SF " + nameFieldA5;
+    //alert(nameFieldA5);
+    resultA6.textContent = '1. SF-Klasse Vollkasko: ' + "SF " + nameFieldA6;
+    //alert(nameFieldA6);
+}
+}
+
+var subButtonA = document.getElementById('subButtonA');
+subButtonA.addEventListener('click', getUserName, false); 
+
+</script>
+  </body>
+</html>
+
