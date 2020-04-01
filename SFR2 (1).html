@@ -1,0 +1,281 @@
+<html>
+<head>
+<title>SFR-Optimierer</title>
+<link rel="stylesheet" href="SFR2.css">
+</head>
+
+ <body>
+<h1>SFR-Optimierer</h1>
+<div class="container">
+<div class="all">
+<h2> 1. Kraftfahrzeug</h2>
+<form id='nameFormA1'>
+<div class='form-uname'>
+    <label id='nameLableA1' for='nameFieldA1'>Kennzeichen: </label>
+    <input id='nameFieldA1' type='text' maxlength='12'></input>
+</div>
+</form>
+
+<form id='nameForAm2'>
+<div class='form-uname'>
+    <label id='nameLableA2' for='nameFieldA2'>Beitrag Haftpflicht: </label>
+    <input id='nameFieldA2' type='number' min="0" placeholder="mit SF0, in Euro"></input>
+</div>
+</form>
+
+<form id='nameFormA3'>
+<div class='form-uname'>
+    <label id='nameLableA3' for='nameFieldA3'>Beitrag Teilkasko: </label>
+    <input id='nameFieldA3' type='number' min="0" placeholder="mit SF0, in Euro"></input>
+</div>
+</form>
+
+<form id='nameFormA4'>
+<div class='form-uname'>
+    <label id='nameLableA4' for='nameFieldA4'>Beitrag Vollkasko: </label>
+    <input id='nameFieldA4' type='number' min="0" placeholder="mit SF0, in Euro"></input>
+</div>
+</form>
+
+<form id='nameFormA5'>
+<div class='form-group'>
+    <label id='nameLableA5' for='nameFieldA5'>SF-Klasse Haftpflicht: </label>
+    <select class="form-control input-medium" name="SF-Klasse[]" id='nameFieldA5'>
+     <option value="">Bitte auswählen</option>
+                        <option value=1>SF 0</option>
+                        <option value=0,65>SF ½</option>
+                        <option value=0,57>SF 1</option>
+                        <option value=0,52>SF 2</option>
+                        <option value=0,49>SF 3</option>
+                        <option value=0,46>SF 4</option>
+                        <option value=0,43>SF 5</option>
+                        <option value=0,41>SF 6</option>
+                        <option value=0,39>SF 7</option>
+                        <option value=0,37>SF 8</option>
+                        <option value=0,35>SF 9</option>
+                        <option value=0,34>SF 10</option>
+                        <option value=0,33>SF 11</option>
+                        <option value=0,32>SF 12</option>
+                        <option value=0,31>SF 13</option>
+                        <option value=0,30>SF 14</option>
+                        <option value=0,29>SF 15</option>
+                        <option value=0,28>SF 16</option>
+                        <option value=0,27>SF 17</option>
+                        <option value=0,26>SF 18</option>
+                        <option value=0,26>SF 19</option>
+                        <option value=0,25>SF 20</option>
+                        <option value=0,25>SF 21</option>
+                        <option value=0,24>SF 22</option>
+                        <option value=0,24>SF 23</option>
+                        <option value=0,23>SF 24</option>
+                        <option value=0,23>SF 25</option>
+                        <option value=0,22>SF 26</option>
+                        <option value=0,22>SF 27</option>
+                        <option value=0,22>SF 28</option>
+                        <option value=0,21>SF 29</option>
+                        <option value=0,21>SF 30</option>
+                        <option value=0,21>SF 31</option>
+                        <option value=0,20>SF 32</option>
+                        <option value=0,20>SF 33</option>
+                        <option value=0,20>SF 34</option>
+                        <option value=0,20>SF 35</option>
+                    </select>
+</div>
+</form>
+
+<form id='nameFormA6'>
+<div class='form-group'>
+    <label id='nameLableA6' for='nameFieldA6'>SF-Klasse Vollkasko: </label>
+    <select class="form-control input-medium" name="SF-Klasse[]" id='nameFieldA6'>
+     <option value="">Bitte auswählen</option>
+                        <option value=0,60>SF 0</option>
+                        <option value=0,50>SF ½</option>
+                        <option value=0,48>SF 1</option>
+                        <option value=0,45>SF 2</option>
+                        <option value=0,43>SF 3</option>
+                        <option value=0,41>SF 4</option>
+                        <option value=0,40>SF 5</option>
+                        <option value=0,39>SF 6</option>
+                        <option value=0,37>SF 7</option>
+                        <option value=0,36>SF 8</option>
+                        <option value=0,35>SF 9</option>
+                        <option value=0,34>SF 10</option>
+                        <option value=0,33>SF 11</option>
+                        <option value=0,32>SF 12</option>
+                        <option value=0,31>SF 13</option>
+                        <option value=0,31>SF 14</option>
+                        <option value=0,30>SF 15</option>
+                        <option value=0,29>SF 16</option>
+                        <option value=0,29>SF 17</option>
+                        <option value=0,28>SF 18</option>
+                        <option value=0,27>SF 19</option>
+                        <option value=0,27>SF 20</option>
+                        <option value=0,26>SF 21</option>
+                        <option value=0,26>SF 22</option>
+                        <option value=0,25>SF 23</option>
+                        <option value=0,25>SF 24</option>
+                        <option value=0,24>SF 25</option>
+                        <option value=0,24>SF 26</option>
+                        <option value=0,24>SF 27</option>
+                        <option value=0,23>SF 28</option>
+                        <option value=0,23>SF 29</option>
+                        <option value=0,22>SF 30</option>
+                        <option value=0,22>SF 31</option>
+                        <option value=0,20>SF 32</option>
+                        <option value=0,20>SF 33</option>
+                        <option value=0,20>SF 34</option>
+                        <option value=0,20>SF 35</option>
+                    </select>
+</div>
+</form>
+</div>
+
+<div class="all">
+<h2> 2. Kraftfahrzeug</h2>
+<form id='nameFormB1'>
+<div class='form-uname'>
+    <label id='nameLableB1' for='nameFieldB1'>Kennzeichen: </label>
+    <input id='nameFieldB1' type='text' maxlength='12'></input>
+</div>
+</form>
+
+<form id='nameFormB2'>
+<div class='form-uname'>
+    <label id='nameLableB2' for='nameFieldB2'>Beitrag Haftpflicht: </label>
+    <input id='nameFieldB2' type='number' min="0" placeholder="mit SF0, in Euro"></input>
+</div>
+</form>
+
+<form id='nameFormB3'>
+<div class='form-uname'>
+    <label id='nameLableB3' for='nameFieldB3'>Beitrag Teilkasko: </label>
+    <input id='nameFieldB3' type='number' min="0" placeholder="mit SF0, in Euro"></input>
+</div>
+</form>
+
+<form id='nameFormB4'>
+<div class='form-uname'>
+    <label id='nameLableB4' for='nameFieldB4'>Beitrag Vollkasko: </label>
+    <input id='nameFieldB4' type='number' min="0" placeholder="mit SF0, in Euro"></input>
+</div>
+</form>
+
+<form id='nameFormB5'>
+<div class='form-group'>
+    <label id='nameLableB5' for='nameFieldB5'>SF-Klasse Haftpflicht: </label>
+    <select class="form-control input-medium" name="SF-Klasse[]" id='nameFieldB5'>
+     <option value="">Bitte auswählen</option>
+                        <option value=1>SF 0</option>
+                        <option value=0,65>SF ½</option>
+                        <option value=0,57>SF 1</option>
+                        <option value=0,52>SF 2</option>
+                        <option value=0,49>SF 3</option>
+                        <option value=0,46>SF 4</option>
+                        <option value=0,43>SF 5</option>
+                        <option value=0,41>SF 6</option>
+                        <option value=0,39>SF 7</option>
+                        <option value=0,37>SF 8</option>
+                        <option value=0,35>SF 9</option>
+                        <option value=0,34>SF 10</option>
+                        <option value=0,33>SF 11</option>
+                        <option value=0,32>SF 12</option>
+                        <option value=0,31>SF 13</option>
+                        <option value=0,30>SF 14</option>
+                        <option value=0,29>SF 15</option>
+                        <option value=0,28>SF 16</option>
+                        <option value=0,27>SF 17</option>
+                        <option value=0,26>SF 18</option>
+                        <option value=0,26>SF 19</option>
+                        <option value=0,25>SF 20</option>
+                        <option value=0,25>SF 21</option>
+                        <option value=0,24>SF 22</option>
+                        <option value=0,24>SF 23</option>
+                        <option value=0,23>SF 24</option>
+                        <option value=0,23>SF 25</option>
+                        <option value=0,22>SF 26</option>
+                        <option value=0,22>SF 27</option>
+                        <option value=0,22>SF 28</option>
+                        <option value=0,21>SF 29</option>
+                        <option value=0,21>SF 30</option>
+                        <option value=0,21>SF 31</option>
+                        <option value=0,20>SF 32</option>
+                        <option value=0,20>SF 33</option>
+                        <option value=0,20>SF 34</option>
+                        <option value=0,20>SF 35</option>
+                    </select>
+</div>
+</form>
+
+<form id='nameFormB6'>
+<div class='form-group'>
+    <label id='nameLableB6' for='nameFieldB6'>SF-Klasse Vollkasko: </label>
+    <select class="form-control input-medium" name="SF-Klasse[]" id='nameFieldB6'>
+     <option value="">Bitte auswählen</option>
+                        <option value=0,60>SF 0</option>
+                        <option value=0,50>SF ½</option>
+                        <option value=0,48>SF 1</option>
+                        <option value=0,45>SF 2</option>
+                        <option value=0,43>SF 3</option>
+                        <option value=0,41>SF 4</option>
+                        <option value=0,40>SF 5</option>
+                        <option value=0,39>SF 6</option>
+                        <option value=0,37>SF 7</option>
+                        <option value=0,36>SF 8</option>
+                        <option value=0,35>SF 9</option>
+                        <option value=0,34>SF 10</option>
+                        <option value=0,33>SF 11</option>
+                        <option value=0,32>SF 12</option>
+                        <option value=0,31>SF 13</option>
+                        <option value=0,31>SF 14</option>
+                        <option value=0,30>SF 15</option>
+                        <option value=0,29>SF 16</option>
+                        <option value=0,29>SF 17</option>
+                        <option value=0,28>SF 18</option>
+                        <option value=0,27>SF 19</option>
+                        <option value=0,27>SF 20</option>
+                        <option value=0,26>SF 21</option>
+                        <option value=0,26>SF 22</option>
+                        <option value=0,25>SF 23</option>
+                        <option value=0,25>SF 24</option>
+                        <option value=0,24>SF 25</option>
+                        <option value=0,24>SF 26</option>
+                        <option value=0,24>SF 27</option>
+                        <option value=0,23>SF 28</option>
+                        <option value=0,23>SF 29</option>
+                        <option value=0,22>SF 30</option>
+                        <option value=0,22>SF 31</option>
+                        <option value=0,20>SF 32</option>
+                        <option value=0,20>SF 33</option>
+                        <option value=0,20>SF 34</option>
+                        <option value=0,20>SF 35</option>
+                    </select>
+</div>
+</form>
+</div>
+</div>
+
+<div class='button'>
+    <button id='subButton' type='button'>Fertig</button>
+</div>
+
+<div class="all">
+    <p id='resultA1'></p>
+    <p id='resultA2'></p>
+    <p id='resultA3'></p>
+    <p id='resultA4'></p>
+    <p id='resultA5'></p>
+    <p id='resultA6'></p>
+<br>
+    <p id='resultB1'></p>
+    <p id='resultB2'></p>
+    <p id='resultB3'></p>
+    <p id='resultB4'></p>
+    <p id='resultB5'></p>
+    <p id='resultB6'></p>
+</div>
+
+<script src="SFR2.js"></script>
+
+  </body>
+</html>
+
