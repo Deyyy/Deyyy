@@ -8,6 +8,7 @@ body {
   margin: 20px;
   width: 300px;
   background: linear-gradient(to bottom right, white, lightgrey);
+  float: left;
 }
 h1 {
   font-size: 80px;
@@ -25,6 +26,9 @@ button {
   background-color: white;
   border: solid black 1px;
   border-radius: 5px;
+}
+.button {
+  clear: both;
 }
 label {
   font-family: sans-serif;
@@ -58,4 +62,7 @@ padding: 0 10px 5px 20px;
   margin: 20px;
   width: 300px;
   background: linear-gradient(to bottom right, white, lightgrey);
+}
+.container {
+  width: 3000px;
 }
